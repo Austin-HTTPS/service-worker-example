@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="swHandler.js"></script>
+  </head>
+  <body>
+    <p>test</p>
+    <!-- Start service worker-->
+<script>
+if("serviceWorker" in navigator){
+  
+ navigator.serviceWorker.register("sw2.js").then(function(registration){
+      console.log("Service worker registered successfully!");
+}).catch(function(error){
+      console.log("Service worker failed to be registered with error: ",error);
+   });
+}
+</script>
+<!-- End Service worker -->
+    <script src="script.js"></script>
+  </body>
+</html>
