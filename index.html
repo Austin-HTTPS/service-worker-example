@@ -6,6 +6,7 @@
     <title>Service Workers Example</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="swHandler.js"></script>
+    <script src="pwa.js"></script>
   </head>
   <body>
     <h1>This will work offfline. This will also have the little icon to download (in the future) the replit talk post is: <a href="https://replit.com/talk/learn/How-to-make-your-website-work-offline-with-Service-Workers/111868">https://replit.com/talk/learn/How-to-make-your-website-work-offline-with-Service-Workers/111868</a> and <a href="https://replit.com/talk/learn/Battle-of-the-workers-Service-workers-vs-Web-workers-what-are-they-and-what-do-they-do/83254">https://replit.com/talk/learn/Battle-of-the-workers-Service-workers-vs-Web-workers-what-are-they-and-what-do-they-do/83254</a></1>
@@ -13,7 +14,7 @@
 <script>
 if("serviceWorker" in navigator){
   
- navigator.serviceWorker.register("sw2.js").then(function(registration){
+ navigator.serviceWorker.register("sw3.js").then(function(registration){
       console.log("Service worker registered successfully!");
 }).catch(function(error){
       console.log("Service worker failed to be registered with error: ",error);

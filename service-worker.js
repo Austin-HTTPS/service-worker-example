@@ -12,7 +12,7 @@
 // eslint-disable-next-line no-unused-vars
 const OFFLINE_VERSION = 1;
 const OFFLINE_CACHE_KEY = 'offline';
-const OFFLINE_URL = '/public/offline.html';
+const OFFLINE_URL = 'offline.html';
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
