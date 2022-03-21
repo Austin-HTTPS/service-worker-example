@@ -6,15 +6,27 @@
     <title>Service Workers Example</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="swHandler.js"></script>
-    <script src="pwa.js"></script>
+    <script src="sw4.js"></script>
   </head>
   <body>
-    <h1>This will work offfline. This will also have the little icon to download (in the future) the replit talk post is: <a href="https://replit.com/talk/learn/How-to-make-your-website-work-offline-with-Service-Workers/111868">https://replit.com/talk/learn/How-to-make-your-website-work-offline-with-Service-Workers/111868</a> and <a href="https://replit.com/talk/learn/Battle-of-the-workers-Service-workers-vs-Web-workers-what-are-they-and-what-do-they-do/83254">https://replit.com/talk/learn/Battle-of-the-workers-Service-workers-vs-Web-workers-what-are-they-and-what-do-they-do/83254</a></1>
+    <h1>This will work offfline. The replit talk posts are: <a href="https://replit.com/talk/learn/How-to-make-your-website-work-offline-with-Service-Workers/111868">Blog post #1</a> and <a href="https://replit.com/talk/learn/Battle-of-the-workers-Service-workers-vs-Web-workers-what-are-they-and-what-do-they-do/83254">Blog Post #2</a></h1>
+      <h4>
+      <br><br>Here is a list of all of the JS, HTML, and CSS pages:<br>
+      <a href="offline.html">offline.html (sometimes an error will occur when you are offline, this will show)</a></a><br>
+      <a href="style.css">style.css</a></a><br>
+      <a href="pwa.js">pwa.js</a></a><br>
+      <a href="script.js">script.js</a></a><br>
+      <a href="service-worker.js">service-worker.js</a></a><br>
+      <a href="sw.js">sw.js</a></a><br>
+      <a href="sw2.js">sw2.js</a></a><br>
+      <a href="sw3.js">sw3.js</a></a><br>
+      <a href="sw4.js">sw4.js</a></a><br>
+      <a href="swHandler.js">swHandler.js</a></a></h4>
     <!-- Start service worker-->
 <script>
 if("serviceWorker" in navigator){
   
- navigator.serviceWorker.register("sw3.js").then(function(registration){
+ navigator.serviceWorker.register("sw4.js").then(function(registration){
       console.log("Service worker registered successfully!");
 }).catch(function(error){
       console.log("Service worker failed to be registered with error: ",error);
